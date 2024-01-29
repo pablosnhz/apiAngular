@@ -1,0 +1,17 @@
+<div class="container my-5">
+  <p class="text-3xl px-2 font-bold dark:text-black">main-page works!</p>
+  <hr>
+  <input type="text"
+  class="form-control"
+  placeholder="Busca tu pelicula"
+  (input)="filter($event)">
+
+
+  <div class="row">
+    <div *ngFor="let personaje of personajes">
+      <app-cards></app-cards>
+  </div>
+</div>
+
+
+</div>

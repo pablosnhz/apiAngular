@@ -20,16 +20,19 @@ export class MainPageComponent  {
     this.http.get<any>(environment.apiUrl + '/character')
     .subscribe((res)=> {
       this.personajes = res.results;
+      console.log(res)
 
 
       this.personajesFilt = this.personajes;
-
     })
   }
 
   filter(e: any){
     const search: string = e.target.value
-    console.log({ search })
+
+    this.personajes = this.personajesFilt?.filter(({name}: Personaje) => {
+      return name.toLowerCase().includes(search.toLowerCase());
+    })
   }
 
 }

@@ -3,13 +3,13 @@
   <hr>
   <input type="text"
   class="form-control"
-  placeholder="Busca tu pelicula"
+  placeholder="Busca un personaje"
   (input)="filter($event)">
 
 
   <div class="row">
     <div *ngFor="let personaje of personajes">
-      <app-cards></app-cards>
+      <app-cards [personaje]="personaje"></app-cards>
   </div>
 </div>
 

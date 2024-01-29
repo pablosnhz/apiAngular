@@ -16,7 +16,8 @@ import { CardsComponent } from './pages/cards/cards.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,14 @@
-<section>
-  <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-      <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-          <div class="p-6">
-            <div class="image-grid">
-              <div class="image-item">
-                <img [src]="personaje.image" alt="Image">
-              </div>
-            </div>
-
-              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{{ personaje.name }}</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>                <div class="mt-4">
-                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Mas sobre este personaje » </a>
-              </div>
-          </div>
-      </div>
+<div class="box max-w-sm rounded overflow-hidden shadow-lg ">
+  <img class="w-full" [src]="personaje.image" alt="Image">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2 text-white">{{ personaje.name }}</div>
+    <p class="text-gray-700 text-base text-white">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    </p>
   </div>
-</section>
+  <div class="px-6 pt-4 pb-2">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ personaje.location.name }}</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ personaje.status }}</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ personaje.gender }}</span>
+  </div>
+</div>

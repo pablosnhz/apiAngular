@@ -1,14 +1,5 @@
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
-
-.image-item {
-  overflow: hidden;
-}
-
-.image-item img {
-  width: 100%;
-  height: auto;
+.box {
+  box-shadow: rgba(76, 38, 38, 0.4) 0px 0px 0px 2px,
+  rgba(232, 113, 113, 0.65) 0px 4px 6px -1px,
+  rgba(46, 45, 45, 0.08) 0px 1px 0px inset;
 }
